@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>个人中心</title>
+	<link rel="stylesheet" type="text/css" href="css/public.css"/>
+	<style type="text/css">
+		.order-nav ul{display: -webkit-box;display: -ms-box;display: box;background:#fff;border-bottom: 1px solid #AFAFAF;}
+		.order-nav ul li{-webkit-box-flex: 1;-ms-box-flex:1;box-flex:1;padding:.2rem 0;text-align: center;color: #666;}		
+		.order-nav ul li.cur{border-bottom: 3px solid #ADBB32;box-sizing: border-box;}
+		.online_order{padding:0 .2rem;box-sizing: border-box;}
+		.online_order .order-item{position: relative;padding:0 0 0 1.6rem;height:.88rem}
+		.online_order .order-item >label{height:.88rem;line-height: .88rem;position: absolute;left: 0;top: 0;color: #666;}
+		.online_order .order-item .public_input{border:0;border-bottom: 1px solid #ddd;outline:none;height:.88rem;padding:0 .2rem;width:100%;box-sizing:border-box;-webkit-appearance: none; appearance: none;}
+		.online_order .radio-box{line-height: .88rem;}
+		/* radio-box */
+		.radio-box input[type="radio"]{float: left;margin: .26rem .2rem 0; width: .36rem; height: .36rem;-webkit-appearance: none; appearance: none; -webkit-border-radius: 50%; border-radius: 50%; border: 2px solid #ced9e1;}
+		.radio-box input[type="radio"]:checked{background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAABNVBMVEX///+ZzH+azICazIGazYCbzIGbzYGo1JKazYGezoWl0o6m0pCZzICs1Zfg79jg8Nfg8Nnh8Nni8Nrj8dzj8tyfzobl8t7m8t+o05KezYSezoap1JOq0J+r1JWr1JaZy3+t1pit1pmu15qv15yw2JybzYKs1pibzIOczYOfz4ag0Iig0Imh0Imy2Z602qG12aW12qK22qO326S426a63Ki63am827C+366/36/A1cfA4LDC4LPE4bXE4rTF4bbF47fH47rJ47rJ5LvN5sDN58HP5sLQ58PR6MTS6cfU5NbU6cjW6szX683Z7M/a7NHb69Xb7dLc7dLc7dPe7tbf7drf79ah0Iqh0Yqi0Yqk0Y2czoOmz5am0JSdzoWo05Dn8uTn8+Dn8+Hr9Ort9ujt9+ju9urv9+rTVE94AAAAAXRSTlMAQObYZgAAANVJREFUeF5tz9OSBEEYBeE/qzU217Zt27b1/o+wER3bHTtTlZffuTpi7ujH7MsDuyben64yafD5Rwd3U/fTJ4vBDd0zSVAzul82K3qbdE/1KLpHdX9LKuz2V81LnQ542RDO//xzBLg7CLg8ESuI33gfuKuBn7w49pTvcy4kOiRoyYKhHRFZi7ZCLBcO7y0JiF/I9i3QsCVhclwE5c1GFdhj8r/FB4g8A3ipmuFrOIKfu17/tw0A1fUtdV1XAG7SonV2D9aCGDqM05gXU3v9K2Lu6qMWfgG8ARWs9zh3BwAAAABJRU5ErkJggg==) no-repeat 50% 50%;background-size: 18px;}
+	</style>
+</head>
+<body>
+	<header class="wrap-header">
+		<div class="nav-wrap-left">
+			<a class="back" href="javascript:history.back(-1)">
+				<i class="text-icon icon-back"></i>
+			</a>
+		</div>
+		<span class="nav-header">个人中心</span>
+	</header>
+	<nav class="order-nav">
+		<ul>
+			<li class="cur">在线预约</li>
+			<li>订单查询</li>
+		</ul>
+	</nav>
+	<ul class="online_order">
+		<li class="order-item">
+			<label>姓名:</label>
+			<input class="public_input" type="text" placeholder="(必填)" />
+		</li>
+		<li class="order-item">
+			<label>年龄:</label>
+			<input class="public_input" type="number" placeholder="(必填)" />
+		</li>	
+		<li class="order-item">
+			<label>性别:</label>
+			<div class="radio-box clearfix">
+				<input type="radio" name="sex"  value="1" checked="checked" /><span class="fl">男</span>
+				<input type="radio" name="sex"  value="0" /><span class="fl">女</span>
+			</div>
+		</li>
+		<li class="order-item">
+			<label>身份证号:</label>
+			<input class="public_input" type="number" placeholder="(必填)" />
+		</li>
+		<li class="order-item">
+			<label>预约医院:</label>
+			<input class="public_input" type="number" placeholder="(必填)" />
+		</li>
+		<li class="order-item">
+			<label>预约科室:</label>
+			<input class="public_input" type="number" placeholder="(必填)" />
+		</li>
+		<li class="order-item">
+			<label>预约项目:</label>
+			<input class="public_input" type="number" placeholder="(必填)" />
+		</li>
+	</ul>
+	<div class="footer-bar">
+		<a class="item" href="index.html"><i class="icon_foot_one"></i><span>关于我们</span></a>
+		<a class="item on" href="own_center.html"><i class="icon_foot_two"></i><span>个人中心</span></a>
+		<a class="item" href="more_about.html"><i class="icon_foot_three"></i><span>更多</span></a>
+	</div>
+</body>
+</html>
