@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>订单查询</title>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<link rel="stylesheet" type="text/css" href="css/date.css"/>
+	</head>
+	<body>
+		<header class="wrap-header">
+		<div class="nav-wrap-left">
+			<a class="back" href="javascript:history.back(-1)">
+				<i class="text-icon icon-back"></i>
+			</a>
+		</div>
+		<span class="nav-header">订单查询</span>
+	</header>
+	<div class="date-box">
+		<div class="time-box">
+			<input type="text" id="beginTime" class="selectTime">
+		</div>
+		<div class="trans">至</div>
+		<div class="time-box">
+			<input type="text" id="endTime" class="selectTime">
+		</div>
+		<button class="search">查询</button>
+	</div>
+	<div class="common-box">
+		<div class="order-cont">
+			<ul class="order-list">
+				<li>
+					<div class="o-l-tit">
+						<div class="tcont">
+							<div class="contact"><p>2016-03-29</p></div>
+							<div class="state"><span>待审核</span></div>
+						</div>
+					</div>
+					<div class="o-l-content">
+						<p class="text-p">北京同仁堂妇科医院 </p>
+					</div>
+					<div class="o-l-total clearfix">
+						<div class="cont fl">姓名：<span class="lvzi">张学友</span></div>
+						<div class="cont fr">身份证：<span class="lvzi">6101221999996522225</span></div>
+					</div>
+				</li>
+				<li>
+					<div class="o-l-tit">
+						<div class="tcont">
+							<div class="contact"><p>2016-03-29</p></div>
+							<div class="state"><span>预约中</span></div>
+						</div>
+					</div>
+					<div class="o-l-content">
+						<p class="text-p">北京同仁堂妇科医院 </p>
+					</div>
+					<div class="o-l-total clearfix">
+						<div class="cont fl">姓名：<span class="lvzi">张学友</span></div>
+						<div class="cont fr">身份证：<span class="lvzi">6101221999996522225</span></div>
+					</div>
+				</li>
+				<li>
+					<div class="o-l-tit">
+						<div class="tcont">
+							<div class="contact"><p>2016-03-29</p></div>
+							<div class="state"><span>预约成功</span></div>
+						</div>
+					</div>
+					<div class="o-l-content">
+						<p class="text-p">北京同仁堂妇科医院 </p>
+					</div>
+					<div class="o-l-total clearfix">
+						<div class="cont fl">姓名：<span class="lvzi">张学友</span></div>
+						<div class="cont fr">身份证：<span class="lvzi">6101221999996522225</span></div>
+					</div>
+				</li>
+			</ul>			
+		</div>
+	</div>
+	
+	<div class="footer-bar">
+		<a class="item" href="index.html"><i class="icon_foot_one"></i><span>首页</span></a>
+		<a class="item on" href="more_about.html"><i class="icon_foot_three"></i><span>更多</span></a>
+	</div>
+	<div id="datePlugin"></div>
+	<script src="js/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/date.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/iscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/public.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#beginTime').val(GetDateStr(-7));
+			$('#beginTime').date();
+			$('#endTime').val(GetDateStr(0));
+			$('#endTime').date();
+		});
+		$('.order-list').on('click','li',function(){
+			window.location.href = 'orders_detail.html';
+		});
+	</script>
+	</body>
+</html>
