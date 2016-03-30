@@ -126,3 +126,15 @@ select.public_input{background-color:#fff;background-size:.88rem;background:url(
 .order-detail-box .item span{display: block;line-height: .88rem;text-align: right;}
 .order-detail-box .item.tba{padding:0 0 0 3.2rem}
 .order-detail-box .item.tba label{width:3rem}
+
+.hezuo-box{padding:0 .2rem .2rem;box-sizing: border-box;}	
+.hezuo-box .tit{text-align: center;padding:.3rem 0;box-sizing: border-box;color: #000;font-weight: 700;}
+.hezuo-box table{border-collapse:collapse;width: 100%;text-align: center;border: 1px solid #98BF21;}
+.hezuo-box table tr{height:.64rem;}
+.hezuo-box table th{color: #fff;box-sizing: border-box;}
+.hezuo-box table td{box-sizing: border-box;font-size: .28rem;padding: .2rem;line-height: 1.5;border-top:1px solid #98BF21}
+.hezuo-box table th:nth-child(1){border-right: 1px solid #98bf21;width:25%}
+.hezuo-box table th:nth-child(2){border-right: 1px solid #98bf21;width:25%}
+.hezuo-box table th:nth-child(3){width:50%}
+.hezuo-box table td:nth-child(1){border-right: 1px solid #98bf21;width:25%}
+.hezuo-box table td:nth-child(2){border-right: 1px solid #98bf21;width:25%}
